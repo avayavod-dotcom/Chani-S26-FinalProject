@@ -3,4 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
-body {}
+body {margin: 0;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #f4f0e4; }
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #E3D2C9;
+}
+.nav {
+  display: flex;
+  gap: 30px;
+}
+.nav a {
+  color: #c97b63;
+  font-size: 18px;
+ }
+ .login {
+  background-color: #c97b63;
+  color: white;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 30px;
+  cursor: pointer;
+}
