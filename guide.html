@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MamaCorner Guide</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">MamaCorner</div>
+
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="guide.html" class="active">Guide</a>
+      <a href="shop.html">Shop</a>
+      <a href="chat.html">Chat</a>
+    </nav>
+
+    <a href="login.html" class="login-btn">Log In</a>
+  </header>
+
+  <main class="guide-main">
+
+    <section class="guide-top">
+      <h1>Guide Page</h1>
+      <p>
+        This page helps moms stay organized and feel more confident. You can choose your baby's age,
+        view a simple schedule, use a feeding calculator, save important baby information, and read
+        helpful tips, books, and activity ideas.
+      </p>
+    </section>
+
+   <section class="age-box">
+  <h2>Choose Baby Age</h2>
+
+  <select id="babyAge">
+    <option value="">Select age</option>
+    <option value="newborn">Newborn (0-2 months)</option>
+    <option value="3">3-6 Months</option>
+    <option value="6">6-12 Months</option>
+    <option value="12">1 Year+</option>
+  </select>
+
+
+    <section class="guide-grid">
+
+      <div class="box">
+        <h2>Baby Schedule</h2>
+        <div class="schedule">
+          <div>8:00 AM</div>
+          <div>Wake up and feeding</div>
+
+          <div>10:00 AM</div>
+          <div>Nap time</div>
+
+          <div>12:00 PM</div>
+          <div>Feeding</div>
+
+          <div>2:00 PM</div>
+          <div>Play time</div>
+
+          <div>3:00 PM</div>
+          <div>Nap time</div>
+
+          <div>5:00 PM</div>
+          <div>Feeding</div>
+
+          <div>7:00 PM</div>
+          <div>Bath and bedtime routine</div>
+        </div>
+        <button class="small-btn">Save Schedule</button>
+      </div>
+
+      <div class="box">
+        <h2>Feeding Calculator</h2>
+
+        <label for="age">Baby Age (months)</label>
+        <input type="number" id="age" placeholder="Enter age">
+
+        <label for="weight">Baby Weight (lbs)</label>
+        <input type="number" id="weight" placeholder="Enter weight">
+
+        <button class="small-btn" onclick="calculateFeeding()">Calculate</button>
+
+        <p id="result">Estimated daily feeding will show here.</p>
+      </div>
+
+      <div class="box tips-box">
+        <h2>Helpful Tips</h2>
+        <ul>
+          <li>Keep a simple feeding and sleep routine.</li>
+          <li>Watch your baby's hunger and tired signs.</li>
+          <li>Do not stress if every day looks a little different.</li>
+          <li>Ask for help when you need support.</li>
+          <li>Keep important baby notes in one place.</li>
+        </ul>
+      </div>
+
+      <div class="box books-box">
+        <h2>Recommended Books</h2>
+        <ul>
+          <li>The Happiest Baby on the Block</li>
+          <li>Cribsheet</li>
+          <li>Moms on Call</li>
+          <li>Baby Wise</li>
+          <li>Bringing Up Bébé</li>
+        </ul>
+      </div>
+
+      <div class="box account-box">
+        <h2>My Baby Folder</h2>
+        <p><strong>Sign up options:</strong> Email, phone number, or password</p>
+        <p><strong>Saved information:</strong></p>
+        <ul>
+          <li>Baby's name</li>
+          <li>Birthday</li>
+          <li>Age group</li>
+          <li>Feeding notes</li>
+          <li>Sleep schedule</li>
+          <li>Saved tips</li>
+          <li>Favorite books</li>
+        </ul>
+        <button class="small-btn">Create Account</button>
+      </div>
+
+      <div class="box activity-box">
+        <h2>Things To Do With Baby</h2>
+        <ul>
+          <li>Tummy time</li>
+          <li>Reading baby books</li>
+          <li>Soft music and singing</li>
+          <li>Walk outside</li>
+          <li>Face-to-face talking</li>
+          <li>Simple sensory play</li>
+        </ul>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p> 2026 MamaCorner</p>
+  </footer>
+
+  <script>
+    function calculateFeeding() {
+      let weight = document.getElementById("weight").value;
+      let result = document.getElementById("result");
+
+      if (weight === "") {
+        result.innerText = "Please enter your baby's weight.";
+        return;
+      }
+
+      let ounces = weight * 2.5;
+      result.innerText = "Estimated daily feeding: " + ounces + " oz per day.";
+    }
+  </script>
+
+</body>
+</html>

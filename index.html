@@ -1,28 +1,90 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Website</title>
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
-    <header class="header">
-      <h1>MamaCorner</h1>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MamaCorner</title>
 
-     <nav class="nav">
-     <a href="index.html">Home</a>
-    <a href="Guide.html">Guide</a>
-    <a href="Shop.html">Shop</a>
-    <a href="#">Chat</a>
-  </nav>
-  <button class="login">Log In</button>
- </header>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
 
- <main>
-   <p>
-    
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="header">
+    <div class="logo">MamaCorner</div>
+
+    <nav class="nav">
+      <a href="index.html" class="active">Home</a>
+      <a href="guide.html">Guide</a>
+      <a href="shop.html">Shop</a>
+      <a href="chat.html">Chat</a>
+    </nav>
+
+    <a href="login.html" class="login-btn">Log In</a>
+  </header>
+
+  <main class="main">
+
+    <section class="welcome">
+      <h1>Welcome to MamaCorner</h1>
+      <p>
+        Being a mom is beautiful, but it can also feel overwhelming, especially in the beginning.
+        Many new moms feel unsure about schedules, feeding, sleep, and daily routines.
+        MamaCorner was created to make things easier and help moms feel supported every day.
       </p>
-    </main>
-  </body>
+
+      <p>
+        Here you can find simple guides, helpful tips, and useful tools for your motherhood journey.
+        Our goal is to help you feel more confident, organized, and less alone.
+      </p>
+    </section>
+
+    <section class="start">
+      <h2>First Time Mom? Start Here</h2>
+    </section>
+
+    <section class="cards">
+
+      <div class="card">
+        <div class="card-text">
+          <h3>Baby Schedule Guide</h3>
+          <p>
+            Learn simple ideas for daily baby routines, including feeding, naps, and play time.
+          </p>
+        </div>
+        <a href="guide.html" class="card-btn">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-text">
+          <h3>Feeding Tips</h3>
+          <p>
+            Find easy feeding tips to better understand your baby’s hunger signs and daily needs.
+          </p>
+        </div>
+        <a href="guide.html" class="card-btn">Read More</a>
+      </div>
+
+      <div class="card">
+        <div class="card-text">
+          <h3>Sleep Support</h3>
+          <p>
+            Read simple sleep advice that can help babies rest better and parents feel calmer.
+          </p>
+        </div>
+        <a href="guide.html" class="card-btn">Read More</a>
+      </div>
+
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p> 2026 MamaCorner</p>
+  </footer>
+
+</body>
 </html>
