@@ -10,6 +10,7 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
+
 .header {
   background-color: #e7d7cf;
   padding: 18px 40px;
@@ -35,13 +36,12 @@ body {
   text-decoration: none;
   color: #6b4f3f;
   font-size: 17px;
-  font-weight: 500;
   padding: 8px 14px;
   border-radius: 20px;
 }
 
-.nav a.active,
-.nav a:hover {
+.nav a:hover,
+.nav a.active {
   background-color: #f3ebe7;
 }
 
@@ -51,38 +51,63 @@ body {
   color: white;
   padding: 10px 22px;
   border-radius: 25px;
-  font-size: 16px;
-  font-weight: 500;
 }
-.main {
-  width: 85%;
-  max-width: 1000px;
+
+
+.main,
+.guide-main,
+.chat-main,
+.shop-main {
+  width: 90%;
+  max-width: 1100px;
   margin: 60px auto;
 }
-.welcome {
+
+
+h1,
+h2,
+h3 {
+  font-family: 'Playfair Display', serif;
+}
+
+.welcome,
+.guide-top,
+.chat-top,
+.shop-top,
+.start,
+.age-box {
   text-align: center;
+}
+
+.welcome h1,
+.guide-top h1,
+.chat-top h1,
+.shop-top h1 {
+  font-size: 40px;
+  color: #6b4f3f;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+}
+
+.home-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 50px;
   margin-bottom: 60px;
 }
-.welcome h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 42px;
-  color: #6b4f3f;
-  margin-bottom: 25px;
+
+.hero-img img {
+  width: 300px;
 }
-.welcome p {
-  font-size: 18px;
-  line-height: 1.8;
-  max-width: 800px;
-  margin: 0 auto 18px auto;
-}
-.start {
-  text-align: center;
-  margin-bottom: 30px;
-}
-.start h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 30px;
-  color: #6b4f3f;
+
+.home-hero .welcome {
+  text-align: left;
+  max-width: 600px;
 }
 
 .cards {
@@ -93,138 +118,60 @@ body {
 
 .card {
   background-color: #eadfd8;
-  border-radius: 18px;
   padding: 25px;
+  border-radius: 18px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   gap: 20px;
 }
 
-.card-text h3 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
+.card h3 {
   color: #3f2c22;
+  font-size: 24px;
   margin-bottom: 10px;
 }
 
-.card-text p {
-  font-size: 16px;
-  line-height: 1.7;
+.card-btn,
+.post-btn,
+.chat-btn,
+.view-btn,
+.product-card a {
+  background-color: #cb8466;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  border: none;
+  cursor: pointer;
 }
 
 .card-btn {
-  text-decoration: none;
   background-color: #9ca783;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 25px;
-  font-size: 15px;
-  font-weight: 500;
-  white-space: nowrap;
 }
 
-.guide-main {
-  width: 90%;
-  max-width: 1100px;
-  margin: 60px auto;
-}
-
-.guide-top {
-  text-align: center;
-  margin-bottom: 40px;
-}
-
-.guide-top h1 {
-  font-family: 'Playfair Display', serif;
-  font-size: 40px;
-  color: #6b4f3f;
-  margin-bottom: 20px;
-}
-
-.guide-top p {
+.guide-top p,
+.chat-top p,
+.shop-top p,
+.welcome p {
   max-width: 850px;
-  margin: 0 auto;
-  font-size: 18px;
-  line-height: 1.8;
+  margin: 0 auto 18px;
 }
 
 .age-box {
-  text-align: center;
   margin-bottom: 50px;
 }
 
 .age-box h2 {
-  font-family: 'Playfair Display', serif;
   font-size: 26px;
   color: #6b4f3f;
   margin-bottom: 15px;
 }
 
-select {
-  width: 260px;
+select,
+input,
+textarea {
   padding: 10px 14px;
-  margin-top: 10px;
-  border: 1px solid #d8c7be;
-  border-radius: 20px;
-  background-color: #fffaf7;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
-  color: #5d4636;
-}
-
-.guide-grid {
-  display: grid;
-  grid-template-columns: 2fr 1.2fr;
-  gap: 30px;
-  margin-top: 20px;
-}
-
-.box {
-  background-color: #eadfd8;
-  border-radius: 22px;
-  padding: 30px;
-  text-align: center;
-}
-
-.box h2 {
-  font-family: 'Playfair Display', serif;
-  font-size: 24px;
-  color: #6b4f3f;
-  margin-bottom: 20px;
-}
-
-.box p,
-.box label,
-.box li,
-.schedule div {
-  font-size: 16px;
-  line-height: 1.8;
-}
-
-.box ul {
-  list-style: none;
-  padding-left: 0;
-  margin: 0;
-}
-
-.box li {
-  list-style: none;
-  margin-bottom: 8px;
-}
-
-.schedule {
-  display: grid;
-  grid-template-columns: 1fr 1.5fr;
-  gap: 14px 28px;
-  margin-bottom: 20px;
-}
-
-input {
-  width: 100%;
-  padding: 10px 14px;
-  margin-top: 6px;
-  margin-bottom: 14px;
   border: 1px solid #d8c7be;
   border-radius: 12px;
   background-color: #fffaf7;
@@ -232,23 +179,222 @@ input {
   font-size: 15px;
 }
 
-.small-btn {
-  display: inline-block;
-  margin-top: 10px;
+select {
+  width: 260px;
+  border-radius: 20px;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+.guide-grid,
+.chat-layout {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.box,
+.post-box,
+.community-box,
+.help-box,
+.therapist-box {
+  background-color: #eadfd8;
+  padding: 25px;
+  border-radius: 22px;
+}
+
+.box {
+  text-align: center;
+}
+
+.box h2,
+.help-box h3,
+.therapist-box h3 {
+  color: #6b4f3f;
+  margin-bottom: 15px;
+}
+
+.box ul {
+  list-style: none;
+}
+
+.box li {
+  margin-bottom: 8px;
+}
+
+.schedule {
+  display: grid;
+  grid-template-columns: 1fr 1.5fr;
+  gap: 14px 25px;
+}
+
+.small-btn,
+.reply-btn {
   background-color: #9c6d68;
   color: white;
   padding: 10px 20px;
   border-radius: 25px;
   border: none;
-  font-family: 'Poppins', sans-serif;
-  font-size: 15px;
   cursor: pointer;
 }
 
-#result {
-  margin-top: 14px;
-  font-weight: 500;
-  line-height: 1.7;
+.chat-title,
+.shop-title {
+  background-color: #9c6d68;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  border-radius: 30px;
+  font-size: 28px;
+  margin: 30px 0 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.post-box textarea {
+  min-height: 140px;
+  margin-bottom: 15px;
+}
+
+.chat-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.option-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.option-pill {
+  background-color: #fffaf7;
+  border: 1px solid #d8c7be;
+  border-radius: 20px;
+  padding: 10px 16px;
+}
+
+.feed {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.post-card,
+.help-card,
+.therapist-card {
+  background-color: #fffaf7;
+  border-radius: 18px;
+  padding: 18px;
+  margin-bottom: 15px;
+}
+
+.post-type {
+  background-color: #f3ebe7;
+  color: #6b4f3f;
+  padding: 6px 12px;
+  border-radius: 20px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+.reply {
+  background-color: #f6f1ea;
+  border-left: 4px solid #cb8466;
+  padding: 12px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+
+.product-row,
+.coming-row {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+.product-card {
+  background-color: #fffaf7;
+  border: 5px solid #eadfd8;
+  border-radius: 18px;
+  padding: 15px;
+  text-align: center;
+}
+
+.product-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 10px;
+}
+
+.product-card h3 {
+  color: #3f2c22;
+  font-size: 20px;
+}
+
+.price {
+  color: #cb8466;
+  font-weight: bold;
+}
+
+.product-card a {
+  display: inline-block;
+  font-size: 13px;
+  padding: 7px 14px;
+  margin: 3px;
+}
+
+.coming-box {
+  background-color: #eadfd8;
+  border-radius: 18px;
+  padding: 35px 10px;
+  text-align: center;
+  font-family: 'Playfair Display', serif;
+  font-size: 22px;
+  color: #6b4f3f;
+}
+
+.help-card,
+.therapist-card {
+  background-color: #fffaf7;
+  border-radius: 18px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.help-card h4,
+.therapist-card h4 {
+  font-size: 18px;
+  color: #6b4f3f;
+  margin-bottom: 8px;
+}
+
+.help-card p,
+.therapist-card p {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 15px; 
+}
+
+.view-btn,
+.chat-btn {
+  display: inline-block;
+  margin-top: 5px;
+
+  background-color: #cb8466;
+  color: white;
+  padding: 10px 18px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
 }
 
 .footer {
